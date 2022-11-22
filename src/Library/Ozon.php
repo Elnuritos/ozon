@@ -11,9 +11,7 @@ use Ozon\Traits\FbsTrait;
 class Ozon
 {
     use
-    OrderTrait,
     ProductTrait,
-    ProductFieldTrait,
     FbsTrait;
 
     const CREATE_PRODUCT = '/v2/product/import';
@@ -26,7 +24,7 @@ class Ozon
     const GET_FBS_WITH_ID = '/v3/posting/fbs/get';
     const CREATE_FBS_SHIP = '/v3/posting/fbs/ship';
     const CANSEL_FBS_SHIP = '/v2/posting/fbs/cancel';
-  
+    const API_URL="https://api-seller.ozon.ru";
   
 
     const METHOD_POST = 'POST';

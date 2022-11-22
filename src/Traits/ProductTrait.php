@@ -18,7 +18,7 @@ trait ProductTrait
      * @param array $product Массив созданного товара
      * @return \Ozon\Abstracts\Entity
      */
-    public function createProduct(array $product)
+    public function createProduct(array $product,$headers)
     {
 
         return $this->client->executeCreateRequest(
@@ -33,7 +33,7 @@ trait ProductTrait
      * @param array $product Массив созданного товара
      * @return \Ozon\Abstracts\Entity
      */
-    public function createProduct_with_id(array $product)
+    public function createProduct_with_id(array $product,$headers)
     {
 
         return $this->client->executeCreateRequest(
@@ -48,7 +48,7 @@ trait ProductTrait
      * @param array $product Массив созданного товара
      * @return \Ozon\Abstracts\Entity
      */
-    public function getProductList(array $product)
+    public function getProductList(array $product,$headers)
     {
 
         return $this->client->executeCreateRequest(
@@ -63,7 +63,7 @@ trait ProductTrait
      * @param array $product Массив созданного товара
      * @return \Ozon\Abstracts\Entity
      */
-    public function getProductInfo(array $product)
+    public function getProductInfo(array $product,$headers)
     {
 
         return $this->client->executeCreateRequest(
