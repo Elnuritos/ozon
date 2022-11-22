@@ -41,7 +41,7 @@ class Client
      *
      * @return Entity
      */
-    public function request(string $method, string $url, string $params = '', array $headers = []): Entity
+    public function request(string $method, string $url, string $params = '', string $headers = ''): Entity
     {
         $responseHeaders = [];
         $ch = curl_init();
