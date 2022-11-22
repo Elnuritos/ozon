@@ -126,7 +126,7 @@ class Client
             self::METHOD_POST,
             $url,
             json_encode($data),
-            http_build_query($headers)
+            
         );
         if ($response->getHttpCode() != 201) {
             $errorMessage = $response->getData();
