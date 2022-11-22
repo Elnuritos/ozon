@@ -20,7 +20,7 @@ class Ozon
     const GET_PRODUCT_INFO = '/v2/product/info';
     const GET_FBS_UNFULFILLED = '/v3/posting/fbs/unfulfilled/list';
     
-    const GET_FBS_LIST = '/v3/posting/fbs/get';
+    const GET_FBS_LIST = '/v3/posting/fbs/list';
     const GET_FBS_WITH_ID = '/v3/posting/fbs/get';
     const CREATE_FBS_SHIP = '/v3/posting/fbs/ship';
     const CANSEL_FBS_SHIP = '/v2/posting/fbs/cancel';
