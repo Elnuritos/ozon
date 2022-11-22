@@ -18,8 +18,8 @@ class Ozon
     const CREATE_PRODUCT_WITH_ID = '/v1/product/import-by-sku';
     const GET_PRODUCT_LIST = '/v2/product/list';
     const GET_PRODUCT_INFO = '/v2/product/info';
+
     const GET_FBS_UNFULFILLED = '/v3/posting/fbs/unfulfilled/list';
-    
     const GET_FBS_LIST = '/v3/posting/fbs/list';
     const GET_FBS_WITH_ID = '/v3/posting/fbs/get';
     const CREATE_FBS_SHIP = '/v3/posting/fbs/ship';
@@ -40,9 +40,9 @@ class Ozon
     public function generateUrl(string $url, $id = null): string
     {
         if ($id === null) {
-            $result = self::API_URL . $url . '.json';
+            $result = self::API_URL . $url;
         } else {
-            $result = self::API_URL . $url . '/' . $id . '.json';
+            $result = self::API_URL . $url . '/' . $id;
         }
         return $result;
     }
