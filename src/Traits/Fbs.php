@@ -18,7 +18,7 @@ trait FbsTrait
      * @param array $fbs Массив созданного товара
      * @return \Ozon\Abstracts\Entity
      */
-    public function getFbsList(array $fbs)
+    public function getFbsList(array $fbs,array $headers)
     {
 
         return $this->client->executeCreateRequest(
@@ -33,7 +33,7 @@ trait FbsTrait
      * @param array $fbs Массив созданного товара
      * @return \Ozon\Abstracts\Entity
      */
-    public function getFbsId(array $fbs)
+    public function getFbsId(array $fbs,array $headers)
     {
 
         return $this->client->executeCreateRequest(
@@ -48,7 +48,7 @@ trait FbsTrait
      * @param array $fbs Массив созданного товара
      * @return \Ozon\Abstracts\Entity
      */
-    public function createFbsShip(array $fbs)
+    public function createFbsShip(array $fbs,array $headers)
     {
 
         return $this->client->executeCreateRequest(
@@ -63,7 +63,7 @@ trait FbsTrait
      * @param array $fbs Массив созданного товара
      * @return \Ozon\Abstracts\Entity
      */
-    public function cancelFbsShip(array $fbs)
+    public function cancelFbsShip(array $fbs,array $headers)
     {
 
         return $this->client->executeCreateRequest(
