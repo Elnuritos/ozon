@@ -27,6 +27,15 @@ trait FbsTrait
             $headers
         );
     }
+    public function getFboList(array $fbs, $headers)
+    {
+
+        return $this->client->executeCreateRequest(
+            $this->generateUrl(self::GET_FBO_LIST),
+            $fbs,
+            $headers
+        );
+    }
     /**
      * Создание товара (SKU_ID)
      * В случае успешного создания товара возвращает ассоциативный массив созданного товара
